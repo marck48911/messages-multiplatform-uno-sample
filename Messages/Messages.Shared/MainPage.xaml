@@ -19,7 +19,7 @@
             </SplitView.PaneBackground>
             <SplitView.Pane>
                 <Grid Padding="12">
-                    <ListView ItemsSource="{x:Bind ViewModel.Conversations}" SelectedItem="{x:Bind ViewModel.SelectedConversation, Mode=TwoWay}">
+                    <ListView ItemsSource="{x:Bind ViewModel.Conversations}" SelectedItem="{x:Bind ViewModel.SelectedConversation, Mode=TwoWay}" ItemClick="ListItemClick" IsItemClickEnabled="True">
                         <ListView.ItemContainerStyle>
                             <Style TargetType="ListViewItem">
                                 <Setter Property="HorizontalContentAlignment" Value="Stretch" />
